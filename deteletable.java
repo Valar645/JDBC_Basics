@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class deteletable {
-	
+	//to drop the complete table
 
 		public static void main(String[] args)
 		{
@@ -14,7 +14,7 @@ public class deteletable {
 			Class.forName("org.postgresql.Driver");
 			String url="jdbc:postgresql://localhost:5432/learning_adv_java?user=postgres&password=root";
 			Connection connection=DriverManager.getConnection(url);
-			String sql="drop table product";
+			String sql="drop table Login";
 			Statement statement =connection.createStatement();
 			statement.execute(sql);
 			System.out.println("Table has been  droped ");

@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class altertable {
+	//alter the structure of the column
 
     public static void main(String[] args) {
 

@@ -6,6 +6,7 @@ import java.sql.Statement;
 
 public class insertdataintotable {
 
+	//insert the data into the table
           public static void main(String[] args)
 			{
 				try {
@@ -13,7 +14,8 @@ public class insertdataintotable {
 				Class.forName("org.postgresql.Driver");
 				String url="jdbc:postgresql://localhost:5432/learning_adv_java?user=postgres&password=root";
 				Connection connection=DriverManager.getConnection(url);
-				String sql="insert into product values(104,'eyeliner',400.0)";
+//				String sql="insert into product values(104,'eyeliner',400.0)";
+				String sql="insert into Login values('valar','valar@123')";
 				Statement statement =connection.createStatement();
 				statement.execute(sql);
 				System.out.println("data has been insert ");

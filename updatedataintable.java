@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class updatedataintable {
+	//update the value in the table
 
 	    public static void main(String[] args) {
 

@@ -13,7 +13,8 @@ public class createtable {
 		Class.forName("org.postgresql.Driver");
 		String url="jdbc:postgresql://localhost:5432/learning_adv_java?user=postgres&password=root";
 		Connection connection=DriverManager.getConnection(url);
-		String sql="create table product (productid integer,name character varying ,price double precision)";
+//		String sql="create table product (productid integer,name character varying ,price double precision)";
+		String sql="create table login (username character varying,password character varying )";
 		Statement statement =connection.createStatement();
 		statement.execute(sql);
 		System.out.println("Table has been created");
